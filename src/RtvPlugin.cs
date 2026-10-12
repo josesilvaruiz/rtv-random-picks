@@ -318,7 +318,7 @@ public class RtvPlugin : BasePlugin, IPluginConfig<RtvConfig>
         _votes.Clear();
         _voted.Clear();
 
-        var menu = new WasdMenu(Localizer["vote.menu_title"]);
+        var menu = new WasdMenu(Localizer["vote.menu_title"]) { TimeLimit = Config.VoteSeconds };
         foreach (var key in candidates)
             AddVoteOption(menu, key, _maps.DisplayName(key));
 

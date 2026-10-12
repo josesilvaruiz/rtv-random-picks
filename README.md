@@ -150,6 +150,14 @@ Aparece en el centro de la pantalla:
 
 Junto a cada opción se ve el número de votos en tiempo real. El menú de votación no congela al jugador; el de `!nominate` sí, para poder recorrer la lista con W/S sin moverse.
 
+**Menú Panorama (opcional)**
+
+Si el servidor tiene [RandomPicksHud](https://github.com/josesilvaruiz/RandomPicksHud) 1.2.0 o superior con los menús activados (`EnableMenus`), los menús se dibujan con su menú Panorama: un panel con el voto resaltado, los votos a la derecha y una barra con el tiempo que queda de votación. Las teclas y el aspecto son los de la config de RandomPicksHud (por defecto **W/S** moverse, **E** elegir, también **espacio** en `!nominate`, **A/D** cambiar de página, **R** o **Tab** cerrar).
+
+Se usa el menú de centro de pantalla de siempre si RandomPicksHud no está instalado o no está cargado, si tiene `EnableMenus` en `false`, si la HUD no es para ese jugador o si `RtvRandomPicks` está en su `MenuExcludedPlugins`. Sin RandomPicksHud no cambia nada.
+
+Para compilar hace falta `lib/RandomPicksHudApi.dll` (se compila desde el repo de RandomPicksHud, carpeta `api/`); no se copia junto al plugin.
+
 **Ejemplo de una partida**
 
 1. Empieza el mapa. Durante los primeros 90 segundos el RTV está bloqueado.
